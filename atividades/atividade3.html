@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição de Trabalhos - Encontros Universitários</title>
+</head>
+<body>
+
+    <h1>Inscrição de Trabalhos - Encontros Universitários</h1>
+
+    <form action="/submit" method="POST">
+
+        <!-- TÍTULO DO TRABALHO -->
+        <fieldset>
+            <legend>Informações do Trabalho</legend>
+
+            <label for="titulo">Título do Trabalho:</label>
+            <input type="text" id="titulo" name="titulo" maxlength="100" required>
+            <small>(Máximo de 100 caracteres)</small><br><br>
+
+            <!-- RESUMO DO TRABALHO -->
+            <label for="resumo">Resumo do Trabalho:</label>
+            <textarea id="resumo" name="resumo" maxlength="500" required></textarea>
+            <small>(Máximo de 500 caracteres)</small><br><br>
+        </fieldset>
+
+        <!-- TRILHA DE SUBMISSÃO -->
+        <fieldset>
+            <legend>Trilha de Submissão</legend>
+
+            <input type="checkbox" id="pesquisaCientifica" name="trilha" value="Pesquisa Científica">
+            <label for="pesquisaCientifica">Pesquisa Científica</label><br>
+
+            <input type="checkbox" id="inovacaoTecnologia" name="trilha" value="Inovação e Tecnologia">
+            <label for="inovacaoTecnologia">Inovação e Tecnologia</label><br>
+
+            <input type="checkbox" id="extensaoUniversitaria" name="trilha" value="Extensão Universitária">
+            <label for="extensaoUniversitaria">Extensão Universitária</label><br>
+
+            <input type="checkbox" id="empreendedorismo" name="trilha" value="Empreendedorismo">
+            <label for="empreendedorismo">Empreendedorismo</label><br>
+
+            <input type="checkbox" id="arteCultura" name="trilha" value="Arte e Cultura">
+            <label for="arteCultura">Arte e Cultura</label><br><br>
+        </fieldset>
+
+        <!-- AUTORES -->
+        <fieldset>
+            <legend>Autores e Orientação</legend>
+
+            <label for="autores">Autores:</label>
+            <input type="text" id="autores" name="autores" maxlength="200" required>
+            <small>(Máximo de 200 caracteres)</small><br><br>
+
+            <!-- ORIENTADOR -->
+            <label for="orientador">Orientador:</label>
+            <select id="orientador" name="orientador" required>
+                <option value="">Selecione o orientador</option>
+                <option value="Orientador 1">Orientador 1</option>
+                <option value="Orientador 2">Orientador 2</option>
+                <option value="Orientador 3">Orientador 3</option>
+                <!-- Adicione outras opções de orientadores conforme necessário -->
+            </select><br><br>
+        </fieldset>
+
+        <!-- LINK PARA ANEXOS -->
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+
+            <label for="linkAnexos">Link para Anexos:</label>
+            <input type="url" id="linkAnexos" name="linkAnexos" placeholder="https://example.com"><br><br>
+
+            <!-- COMENTÁRIOS ADICIONAIS -->
+            <label for="comentarios">Comentários Adicionais:</label>
+            <textarea id="comentarios" name="comentarios" maxlength="300"></textarea>
+            <small>(Máximo de 300 caracteres)</small><br><br>
+        </fieldset>
+
+        <!-- BOTÕES DE ENVIO E LIMPAR -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+
+</body>
+</html>

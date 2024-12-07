@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02 - Inscrição para Torneio de Ciclismo</title>
+</head>
+<body>
+
+    <h1>Formulário de Inscrição para o Torneio de Ciclismo</h1>
+
+    <form action="/submit" method="POST">
+
+        <!-- INFORMAÇÕES PESSOAIS -->
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <!-- Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <!-- Data de Nascimento -->
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required><br><br>
+        </fieldset>
+
+        <!-- MODALIDADE DE COMPETIÇÃO -->
+        <fieldset>
+            <legend>Modalidade de Competição</legend>
+            <input type="radio" id="mountainBike" name="modalidade" value="Mountain Bike" required>
+            <label for="mountainBike">Mountain Bike</label><br>
+            <input type="radio" id="ciclismoEstrada" name="modalidade" value="Ciclismo de Estrada">
+            <label for="ciclismoEstrada">Ciclismo de Estrada</label><br><br>        
+        </fieldset>
+
+        <!-- EXPERIÊNCIA -->
+        <fieldset>
+            <legend>Experiência</legend>
+            <input type="radio" id="iniciante" name="experiencia" value="Iniciante" required>
+            <label for="iniciante">Iniciante</label><br>
+            <input type="radio" id="intermediario" name="experiencia" value="Intermediário">
+            <label for="intermediario">Intermediário</label><br>
+            <input type="radio" id="avancado" name="experiencia" value="Avançado">
+            <label for="avancado">Avançado</label><br><br>
+        </fieldset>
+
+        <!-- INTERESSE EM ALIMENTAÇÃO -->
+        <fieldset>
+            <legend>Interesse em Alimentação</legend>
+            <input type="checkbox" id="agua" name="alimentacao" value="Água">
+            <label for="agua">Água</label><br>
+            <input type="checkbox" id="lancheRapido" name="alimentacao" value="Lanche Rápido">
+            <label for="lancheRapido">Lanche Rápido</label><br>
+            <input type="checkbox" id="lancheReforcado" name="alimentacao" value="Lanche Reforçado">
+            <label for="lancheReforcado">Lanche Reforçado</label><br>
+            <input type="checkbox" id="cocaZero" name="alimentacao" value="Coca-Cola Sem Açúcar">
+            <label for="cocaZero">Coca-Cola Sem Açúcar</label><br>
+            <input type="checkbox" id="barraProteica" name="alimentacao" value="Barra Proteica">
+            <label for="barraProteica">Barra Proteica</label><br><br>
+        </fieldset>
+
+        <!-- ACEITAÇÃO DOS TERMOS -->
+        <fieldset>
+            <legend>Termos e Condições</legend>
+            <input type="checkbox" id="aceito" name="aceito" value="sim" required>
+            <label for="aceito">Li e aceito os termos e condições do torneio</label><br><br>
+        </fieldset>
+
+        <!-- BOTÃO DE ENVIO -->
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+    
+</body>
+</html>
