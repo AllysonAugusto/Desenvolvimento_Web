@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade01-CSS</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/1d/Brasao_ufc.svg" type="imagem/png">
+    <link rel="stylesheet" href="atividade1.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; background-color: #4c4c6d; color: white; padding: 20px;">IMAGENS</h1>
+    
+    <!-- foto 1 -->
+    <img class="ufc1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6DUN1jTdg1CA9ss3lQh06l9p2MwdZzFSa2Q&s">
+
+    <!-- foto 2 -->
+    <img class="ufc2" src="https://www.quixada.ufc.br/wp-content/uploads/2021/06/Fundo-Meet-04.jpg">
+
+    <!-- foto 3 -->
+    <img class="ufc3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Vw1EbMRVOTrXI0HyaYSwP4wt69feiKm6QDtoJvsD-DSI-EIw1bunkeyeuN3uwjiR20M&usqp=CAU">
+
+    <!--links-->
+    <br><br><br><br><br><br><br><br><br>
+    <h1 style="text-align: center; background-color: #4c4c6d; color: white; padding: 20px; margin-top: -130px;">LINKS</h1>
+
+    <ul style="list-style-type: decimal;">
+        <li><a class="link1" href="https://moodle2.quixada.ufc.br/login/index.php">Link 1</a></li>
+        <li><a class="link2" href="https://si3.ufc.br/sigaa/verTelaLogin.do">Link 2</a></li>
+        <li><a class="link3" href="https://www.quixada.ufc.br/evento/">Link 3</a></li>
+        <li><a class="link4" href="https://www.ufc.br/ensino/guia-de-profissoes/17810-seguranca-da-informacao">Link 4</a></li>
+    </ul>
+    
+</body>
+</html>
+
