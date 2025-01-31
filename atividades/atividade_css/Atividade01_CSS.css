@@ -1,0 +1,45 @@
+img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.ufc1 {
+    background-color: aquamarine;
+    z-index: 1;
+    width: 70%;
+}
+
+.ufc2 {
+    background-color: beige;
+    z-index: 2;
+    width: 70%;
+}
+
+.ufc3 {
+    background-color: blanchedalmond;
+    z-index: 3;
+    position: fixed;
+    top: 90px;
+
+
+}
+
+.link1:link {
+    color: blue;
+    text-decoration: none;
+}
+
+.link2:visited {
+    color: purple;
+}
+
+.link3:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.link4:active {
+    color:green;
+}
+
